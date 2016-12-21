@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-navbar color="secondary">
+    <ion-title>
+     {{name}}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <!--<BR>
+  <h2>{{name}}</h2>
+    <h5>{{address}}</h5>
+  <BR>-->
+  <div id="map"></div>
+
+    <ion-card>
+      <!--<img src="{{img}}">-->
+     <ion-fab right top>
+        <button ion-fab>
+          <!--<ion-icon name="pin" detail-push (click)="goNextPage(HK)">-->
+            <ion-icon name="pin">
+          </ion-icon>
+        </button>
+      </ion-fab>
+
+      <ion-item>
+        <ion-icon name="md-car" item-left large></ion-icon>
+        <h2>{{name}}</h2>
+        <p>{{address}}</p>
+      </ion-item>
+
+      <ion-item>
+        <span item-left>18 min</span>
+        <span item-left>(2.6 mi)</span>
+        <button primary clear item-right>
+          <ion-icon name="navigate"></ion-icon>
+          Start
+        </button>
+      </ion-item>
+
+    </ion-card>
+
+    <ion-grid>
+       <!--<ion-row>
+        <ion-col width-5></ion-col>
+        <ion-col width-90>
+          <p>{{address}}</p>
+        </ion-col>
+        <ion-col width-5></ion-col>
+      </ion-row>-->
+
+      <ion-row>
+        <ion-col width-5></ion-col>
+        <ion-col width-90>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{detail}}</p>
+        </ion-col>
+        <ion-col width-5></ion-col>
+      </ion-row>
+    </ion-grid>
+    
+
+</ion-content>
